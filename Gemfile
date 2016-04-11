@@ -1,7 +1,7 @@
 source 'https://rubygems.org'
 gem 'omniauth-facebook'
 gem 'rails', '4.2.0'
-gem 'mysql2'
+gem 'mysql2' , '~> 0.3.18'
 gem 'sass-rails', '~> 5.0'
 gem 'uglifier', '>= 1.3.0'
 gem 'coffee-rails', '~> 4.1.0'
@@ -23,7 +23,7 @@ gem "paperclip", "~> 4.2"
 gem 'acts_as_votable', '~> 0.10.0'
 gem "font-awesome-rails"
 gem 'acts-as-messageable'
-gem 'pg'
+
 group :development, :test do
   # Call 'byebug' anywhere in the code to stop execution and get a debugger console
   gem 'byebug'

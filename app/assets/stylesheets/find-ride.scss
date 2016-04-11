@@ -1,0 +1,209 @@
+$mobile: new-breakpoint(max-width 500px 12);
+
+#show-carpool{
+	
+#show-first{
+	@include span-columns(10);
+	@include shift(1);
+	
+#map-canvas {
+		@include span-columns(8);
+        height: 310px;
+        
+
+        @include media($mobile) {
+ 		 @include span-columns(10);
+ 		 @include shift(1);
+ 		 height: 300px;
+		}
+       
+      }
+#show-user-details{
+	@include span-columns(4);
+	.show-users{
+		text-align: center;
+		display: block;
+		line-height:200%;
+		
+		span{
+			color:green;
+			font-weight: bold;
+		}
+		.img-size{
+			width:120px;height:120px;border-radius:50%;
+			@include media($mobile) {
+				width:80px;height:80px;border-radius:50%;
+			}
+		}
+	}
+	.show-u-preference{
+		@include span-columns(2);
+		margin-top: 10px;
+	
+
+		@include media($mobile) {
+			margin-top: 5px;
+			  width: 53px;
+  			height: 41px;
+		}
+	}
+
+	@include media($mobile) {
+ 		 @include span-columns(10);
+ 		 @include shift(1);
+ 		
+		}
+}
+}
+#show-user-trip-1{
+	@include span-columns(10);
+	@include shift(1);
+	
+	display: inline;
+	#show-user-trip{
+		@include span-columns(6);
+		
+	@include media($mobile) {
+ 		 @include span-columns(10);
+ 		 @include shift(1);
+		    .users-trip{
+				@include span-columns(4);
+				
+				font-weight: 900;
+				font-size: 150%;
+				margin-top: 12px;
+				
+
+			}
+			.users-trip1{
+				@include span-columns(1);
+				margin-top: 15px;
+				
+			}
+ 		
+	}
+	.users-trip{
+		@include span-columns(5);
+		
+		font-weight: 900;
+		font-size: 110%;
+		margin-top: 12px;
+		
+
+	}
+	.users-trip1{
+		@include span-columns(2);
+		margin-top: 8px;
+		
+	}
+	
+	
+}
+
+
+}
+
+.date-time-other{
+	margin-top: 15px;
+	@include span-columns(10);
+	@include shift(1);
+	span{
+		color:green;
+	}
+
+	@include media($mobile) {
+		margin-top: 25px;
+	}
+}
+
+.show-date-time{
+@include span-columns(10);
+@include shift(1);
+	.date-time{
+		@include span-columns(6);
+		span{
+		color:green;
+		}
+		i{
+		color:green;
+		}
+	}
+
+}
+
+.show-preference{
+	@include outer-container;
+	
+	
+}
+
+.show-other{
+	@include span-columns(6);
+
+	
+
+	@include media($mobile) {
+  @include span-columns(12);
+  
+.show-u-other{
+		
+		
+		@include span-columns(6);
+
+		margin-top: 15px;
+		
+		span{
+		color:green;
+		}
+	}
+
+}
+	.show-u-other{
+		
+		
+		@include span-columns(6);
+
+		margin-top: 15px;
+		
+		span{
+		color:green;
+		}
+	}
+
+
+}
+
+.book-button{
+	
+	@include span-columns(10);
+	@include shift(1);
+	text-align: center;
+}
+
+}
+
+.pad{
+	margin-top: 20px;
+}
+
+
+
+.btnshow{
+	width: 20%;
+	@include media($mobile) {
+		width: 50%;
+	}
+}
+
+
+
+
+
+#find-rides{
+	@include outer-container;
+	@include media($mobile) {
+		@include outer-container;
+  @include span-columns(12);
+  font-size: 5px;
+}
+}

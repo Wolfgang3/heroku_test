@@ -1,0 +1,47 @@
+.user-profile{
+	@include outer-container;
+	#user-profile-main{
+		@include span-columns(8);
+		@include shift(2);
+		@include media($mobile) {
+		  	@include span-columns(10);
+			@include shift(1);
+		}
+			#profile-pic{
+				@include span-columns(4);
+				@include media($mobile) {
+				  	@include span-columns(10);
+					@include shift(1);
+				}
+			}
+			#profile-details{
+				@include span-columns(8);
+				@include media($mobile) {
+				  	@include span-columns(10);
+					@include shift(1);
+				}
+			}
+	}
+	#user-profile-message-1{
+		margin-top: 25px;
+
+		@include span-columns(8);
+		@include shift(2);
+		@include media($mobile) {
+		  	@include span-columns(10);
+			@include shift(1);
+		}
+		border: 5px solid blue;
+	#user-profile-message{
+		margin-bottom: 25px;
+		margin-top: 25px;
+		@include span-columns(6);
+		@include shift(3);
+		@include media($mobile) {
+		  	@include span-columns(8);
+			@include shift(2);
+		}
+	}
+	
+	}
+}

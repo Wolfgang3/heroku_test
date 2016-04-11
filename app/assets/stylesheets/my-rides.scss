@@ -1,0 +1,58 @@
+
+
+.my-rides{
+	@include outer-container;
+	.publish-location-form{
+		margin-top:25px;
+		text-align:center;
+	}
+	#tab-main-content{
+		@include span-columns(12);
+		$mobile: new-breakpoint(max-width 500px 12);
+		border: 3px solid #18BD9D;
+		margin-top: 25px;
+		
+		.table-button{
+			@include span-columns(4);
+			text-align: center;
+			@include media($mobile) {
+			  @include span-columns(4);
+			}
+		}
+		.test{
+			@include span-columns(5);
+			@include media($mobile) {
+			  @include span-columns(12);
+			}
+
+		}
+
+	}
+}
+
+#created{
+	@include span-columns(12);
+		$mobile: new-breakpoint(max-width 500px 12);
+		border: 3px solid #18BD9D;
+		margin-top: 25px;
+	.created-tab{
+		@include span-columns(5);
+		@include media($mobile) {
+		@include span-columns(12);
+		}
+
+	}
+	#user-created{
+		@include span-columns(12);
+		@include media($mobile) {
+		@include span-columns(12);
+		}
+	}
+	.created-button{
+		@include span-columns(4);
+		text-align: center;
+		@include media($mobile) {
+			 @include span-columns(4);
+		}
+	}
+}
